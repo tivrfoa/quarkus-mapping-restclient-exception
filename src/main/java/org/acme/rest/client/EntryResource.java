@@ -19,9 +19,10 @@ public class EntryResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
         try {
-            return extensionsService.getBad();
+            extensionsService.getBad();
+            throw new RuntimeException("It should have thrown CorreiosException");
         } catch (CorreiosException e) {
-            System.err.println(e.getMessage());
+            System.err.println(e);
             return "ooops - ping back : " + e.getMessage();
         }
     }

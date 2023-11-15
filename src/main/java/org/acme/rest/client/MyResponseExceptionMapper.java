@@ -11,6 +11,7 @@ public class MyResponseExceptionMapper implements ResponseExceptionMapper<Correi
    @Override
    public CorreiosException toThrowable(Response response) {
         System.err.println(response.getEntity());
-       return new CorreiosException(response.getStatus() + " - " + response.readEntity(String.class));
+        CorreiosException correiosException = response.readEntity(CorreiosException.class);
+        return correiosException;
    }
 }

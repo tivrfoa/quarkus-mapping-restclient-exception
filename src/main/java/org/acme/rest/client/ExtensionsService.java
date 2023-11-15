@@ -18,5 +18,11 @@ public interface ExtensionsService {
     @Path("/bad")
     @Consumes(MediaType.TEXT_PLAIN)
     @Produces(MediaType.TEXT_PLAIN)
+    String getBadTextPlain();
+
+    @GET
+    @Path("/badjson")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     String getBad();
 }
