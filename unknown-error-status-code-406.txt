@@ -1,0 +1,7 @@
+2023-11-15 19:07:51,231 ERROR [org.jbo.res.res.i18n] (executor-thread-1) RESTEASY002010: Failed to execute: org.jboss.resteasy.client.exception.ResteasyWebApplicationException: Unknown error, status code 406
+	at org.jboss.resteasy.client.exception.WebApplicationExceptionWrapper.wrap(WebApplicationExceptionWrapper.java:105)
+	at org.jboss.resteasy.microprofile.client.DefaultResponseExceptionMapper.toThrowable(DefaultResponseExceptionMapper.java:42)
+	at org.jboss.resteasy.microprofile.client.ExceptionMapping$HandlerException.mapException(ExceptionMapping.java:60)
+	at io.quarkus.restclient.runtime.QuarkusProxyInvocationHandler.invoke(QuarkusProxyInvocationHandler.java:172)
+	at jdk.proxy4/jdk.proxy4.$Proxy70.getById(Unknown Source)
+	at org.acme.rest.client.EntryResource.hello(EntryResource.java:25)
