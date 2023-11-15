@@ -1,3 +1,8 @@
+https://docs.jboss.org/resteasy/docs/3.11.3.Final/userguide/html/ExceptionHandling.html
+
+https://download.eclipse.org/microprofile/microprofile-rest-client-2.0/microprofile-rest-client-spec-2.0.html#_responseexceptionmapper
+
+
 # rest-client-quickstart
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
